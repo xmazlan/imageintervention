@@ -24,7 +24,7 @@ class CreateSignsTable extends Migration
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
             $table->string('institute', 50)->default('Pemerintah Kota Pekanbaru');
-            $table->enum('positionType', ['lurah', 'camat', 'kadis']);
+            $table->enum('positionType', ['lurah', 'camat', 'kadis', 'sekda']);
             $table->integer('moreUnderline')->default(0);
             $table->string('nohp')->nullable();
             $table->string('email')->nullable();

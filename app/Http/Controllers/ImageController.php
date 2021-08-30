@@ -51,7 +51,8 @@ class ImageController extends Controller
             'posNames' => [
                 'lurah',
                 'camat',
-                'kadis'
+                'kadis',
+                'sekda'
             ]
         ];
         return view('image.create', $data);
@@ -125,7 +126,7 @@ class ImageController extends Controller
 
         if ($sign->positionType == 'lurah') : $bgColor = 'green';
         elseif ($sign->positionType == 'camat') : $bgColor = 'blue';
-        elseif ($sign->positionType == 'kadis') : $bgColor = 'red';
+        elseif ($sign->positionType == 'sekda' || $sign->positionType == 'kadis') : $bgColor = 'red';
         else : $bgColor = 'cyan';
         endif;
 

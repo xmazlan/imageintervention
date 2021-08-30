@@ -112,7 +112,8 @@ class positionSeeder extends Seeder
             ['name' => 'Lurah Sukajadi'],
             ['name' => 'Lurah Delima'],
             ['name' => 'Lurah Muara Fajar Timur'],
-            ['name' => 'Lurah Sukamaju']
+            ['name' => 'Lurah Sukamaju'],
+            ['name' => 'Sekretaris Daerah'],
         ]);
     }
 }
